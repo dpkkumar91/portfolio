@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Solar Power Forecasting | Deepak Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    body { scroll-behavior: smooth; }
+    .gradient-bg { background: linear-gradient(135deg, #fff9f4 0%, #fde8d8 100%); }
+    .shadow-premium { box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08); }
+  </style>
+</head>
+<body class="gradient-bg text-gray-800">
+
+  <!-- Header -->
+  <header class="fixed w-full bg-white/80 backdrop-blur-md border-b border-amber-100 z-50">
+    <div class="max-w-7xl mx-auto flex justify-between items-center py-4 px-6">
+      <h1 class="text-2xl font-bold text-amber-700 tracking-tight">Solar Power Forecasting</h1>
+      <a href="../index.html#projects" class="text-amber-600 hover:underline font-medium">← Back to Projects</a>
+    </div>
+  </header>
+  <!-- Hero Section -->
+  <section class="pt-28 pb-16 text-center px-6">
+    <h2 data-aos="fade-up" class="text-5xl font-bold text-gray-900 mb-6">Solar Power Generation & Weather Analysis</h2>
+    <p data-aos="fade-up" data-aos-delay="100" class="max-w-3xl mx-auto text-lg text-gray-600 leading-relaxed">
+      This project investigates how solar energy generation fluctuates under different weather and operational conditions. 
+      By integrating <strong>Python-based analytics, Power BI visualizations, and time-series modeling</strong>, 
+      the study explores the dependencies between irradiation, temperature, and DC/AC output to optimize renewable generation efficiency.
+    </p>
+    <div data-aos="fade-up" data-aos-delay="200" class="mt-8">
+      <a href="https://github.com/dpkkumar91/Solar-Power-Project" target="_blank"
+         class="bg-amber-600 hover:bg-amber-700 text-white px-8 py-3 rounded-xl shadow-lg text-lg transition-all transform hover:-translate-y-1">
+         🔗 View Full Code on GitHub
+      </a>
+    </div>
+  </section>
+
+ <!-- Plant Overview -->
+<section class="max-w-6xl mx-auto px-6 py-16 bg-white rounded-3xl shadow-premium mb-20" data-aos="fade-up">
+  <h3 class="text-3xl font-semibold text-amber-700 mb-8 text-center">🌍 Data Sources & Plant Overview</h3>
+  
+  <p class="text-gray-700 leading-relaxed text-lg mb-8 text-center max-w-4xl mx-auto">
+    The dataset used in this study combines <strong>solar power generation logs</strong> and 
+    <strong>weather sensor data</strong> from two distinct plants — <strong>Plant 1</strong> and 
+    <strong>Plant 2</strong>. Each dataset includes AC/DC output readings, irradiation levels, 
+    ambient and module temperature, humidity, and wind speed.
+    Data preprocessing, cleaning, and transformation were performed using <strong>Pandas</strong> and 
+    <strong>Numpy</strong>, while <strong>Matplotlib</strong> and <strong>Seaborn</strong> were used for 
+    exploratory data analysis and visualization.
+  </p>
+
+  <!-- Plant Images -->
+  <div class="grid md:grid-cols-2 gap-10 mb-12">
+    <div class="text-center" data-aos="zoom-in">
+      <img src="../images/image27.png" alt="Plant 1" class="rounded-2xl shadow-lg w-full mb-3">
+      <p class="text-sm text-gray-500 italic">Plant 1 — Semi-arid Terrain | 500 kW Capacity | 1-Min Interval Logging</p>
+    </div>
+    <div class="text-center" data-aos="zoom-in">
+      <img src="../images/image28.png" alt="Plant 2" class="rounded-2xl shadow-lg w-full mb-3">
+      <p class="text-sm text-gray-500 italic">Plant 2 — Urban Outskirts | 600 kW Capacity | Real-time Weather Station</p>
+    </div>
+  </div>
+
+  <!-- Weather Sensor Data Images -->
+  <div class="grid md:grid-cols-2 gap-10">
+    <div class="text-center" data-aos="fade-right">
+      <img src="../images/image29.png" alt="Weather Sensor Data - Plant 1" class="rounded-2xl shadow-md w-full max-w-3xl mx-auto mb-3">
+      <p class="text-sm text-gray-500 italic">Weather Sensor Data — Plant 1: Irradiation, Ambient Temp, Humidity, Wind Speed</p>
+    </div>
+    <div class="text-center" data-aos="fade-left">
+      <img src="../images/image30.png" alt="Weather Sensor Data - Plant 2" class="rounded-2xl shadow-md w-full max-w-3xl mx-auto mb-3">
+      <p class="text-sm text-gray-500 italic">Weather Sensor Data — Plant 2: Irradiation, Ambient Temp, Humidity, Wind Speed</p>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Weather vs Power -->
+  <section class="max-w-7xl mx-auto px-6 py-20" data-aos="fade-up">
+    <h3 class="text-4xl font-semibold text-amber-700 mb-10 text-center">☀️ Impact of Weather on Power Generation</h3>
+    <p class="max-w-4xl mx-auto text-lg text-gray-600 text-center mb-12 leading-relaxed">
+      Using <strong>correlation analysis and scatter visualizations</strong>, the relationship between sunlight intensity and power yield was studied. 
+      The results demonstrate a strong positive correlation between irradiation and DC power, though extreme ambient temperatures cause minor efficiency drops due to cell heating.
+    </p>
+
+    <div class="space-y-16">
+      <div data-aos="fade-right">
+        <img src="../images/image31.png" class="rounded-3xl shadow-md w-full mb-3" alt="Scatter Plot - Irradiation vs Power Generation">
+        <p class="text-gray-600 text-center text-sm italic">Scatter plots of irradiation vs power generation for both plants, generated using Seaborn’s <code>regplot()</code>.</p>
+      </div>
+
+      <div data-aos="fade-left">
+        <img src="../images/image32.png" class="rounded-3xl shadow-md w-full mb-3" alt="Power and Weather Variables">
+        <p class="text-gray-600 text-center text-sm italic">Correlation matrix of weather and power metrics showing strong dependency between irradiation, module temperature, and energy output.</p>
+      </div>
+
+      <div data-aos="fade-up">
+        <img src="../images/image33.png" class="rounded-3xl shadow-md w-full mb-3" alt="DC Power vs Temperature & Irradiation">
+        <p class="text-gray-600 text-center text-sm italic">DC power, temperature, and irradiation plotted together using <code>matplotlib.cm</code> colormap to show performance interaction over time.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seasonal Trends -->
+  <section class="bg-white rounded-3xl shadow-premium py-20 px-6 mb-20" data-aos="fade-up">
+    <h3 class="text-4xl font-semibold text-amber-700 mb-10 text-center">📅 Seasonal Variations & Yield Distribution</h3>
+    <p class="max-w-4xl mx-auto text-lg text-gray-600 text-center mb-12 leading-relaxed">
+      To study long-term behavior, data was grouped by month and season using <strong>Pandas groupby()</strong> and <strong>resample()</strong>. 
+      The resulting visualizations, created in both <strong>Power BI</strong> and Python, highlight the monthly yield distribution and seasonal trends.
+    </p>
+
+    <div class="grid md:grid-cols-2 gap-10">
+      <img src="../images/image34.png" alt="Seasonal Yield Distribution" class="rounded-3xl shadow-md w-full">
+      <img src="../images/image35.png" alt="Seasonal Trend Line" class="rounded-3xl shadow-md w-full">
+    </div>
+
+    <div class="mt-10 text-center">
+      <img src="../images/image36.png" alt="Residual Trend" class="rounded-3xl shadow-md w-full max-w-4xl mx-auto mb-3">
+      <p class="text-gray-600 text-center text-sm italic">Residual power fluctuation trendline indicating seasonal dips during monsoon and recovery post-winter.</p>
+    </div>
+  </section>
+
+  <!-- Operational Insights -->
+  <section class="max-w-7xl mx-auto px-6 py-20" data-aos="fade-up">
+    <h3 class="text-4xl font-semibold text-amber-700 mb-10 text-center">⚙️ Operational Performance & Efficiency</h3>
+    <p class="max-w-4xl mx-auto text-lg text-gray-600 text-center mb-12 leading-relaxed">
+      The comparative AC/DC analysis was performed to evaluate inverter performance, fault periods, and conversion losses.
+      Time-series visualizations were generated using <strong>Matplotlib</strong> and <strong>Plotly</strong> to highlight generation cycles and maintenance intervals.
+    </p>
+
+    <img src="../images/image37.png" alt="AC vs DC Power Trends" class="rounded-3xl shadow-md w-full mb-4">
+    <p class="text-gray-500 text-sm italic text-center">
+      “Inverter losses account for an average of 4.3% power difference between DC input and AC output. Periodic calibration minimized these discrepancies.”
+    </p>
+  </section>
+
+  <!-- Insights & Recommendations -->
+  <section class="bg-white rounded-3xl shadow-premium py-20 px-6 mb-20" data-aos="fade-up">
+    <h3 class="text-4xl font-semibold text-amber-700 mb-8 text-center">💡 Key Insights & Recommendations</h3>
+    <p class="text-gray-600 text-center mb-12 max-w-4xl mx-auto">
+      The technical exploration provided both statistical and operational insights that inform future improvements in solar energy forecasting and optimization.
+    </p>
+    <div class="grid md:grid-cols-2 gap-10 max-w-6xl mx-auto text-lg text-gray-700 leading-relaxed">
+      <ul class="list-disc pl-6 space-y-2">
+        <li>Develop machine learning models using <strong>Linear Regression</strong> and <strong>XGBoost</strong> to predict yield from weather forecasts.</li>
+        <li>Integrate <strong>IoT sensors</strong> for real-time module temperature and irradiation data streaming.</li>
+        <li>Adopt <strong>DAX measures in Power BI</strong> for dynamic performance dashboards and KPI tracking.</li>
+        <li>Automate daily data ingestion and transformation pipelines via <strong>n8n</strong> or <strong>Python scripts</strong>.</li>
+      </ul>
+      <ul class="list-disc pl-6 space-y-2">
+        <li>Optimize maintenance intervals by analyzing power drop patterns post-cleaning cycles.</li>
+        <li>Implement <strong>smart energy storage systems</strong> to buffer seasonal dips.</li>
+        <li>Utilize <strong>correlation matrices</strong> to refine predictive feature selection in ML models.</li>
+        <li>Continue validation using <strong>MAE/RMSE metrics</strong> to evaluate forecasting accuracy.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Future Outlook -->
+  <section class="max-w-5xl mx-auto px-6 py-20 text-center" data-aos="fade-up">
+    <h3 class="text-4xl font-semibold text-amber-700 mb-6">🌞 Future Outlook</h3>
+    <p class="text-gray-700 text-lg leading-relaxed max-w-3xl mx-auto">
+      The integration of <strong>AI-driven forecasting, edge IoT devices, and smart grid analytics</strong> 
+      represents the next evolution in solar plant operations. Future work will focus on automating prediction pipelines, 
+      optimizing inverter control algorithms, and expanding predictive accuracy using hybrid models combining weather data with plant telemetry.
+    </p>
+  </section>
+
+ 
+<!-- Footer -->
+<footer class="bg-white mt-16 shadow-inner py-12 text-gray-700">
+  <div class="max-w-6xl mx-auto px-10 text-center space-y-4">
+    <p>&copy; 2025 Deepak Portfolio. All rights reserved.</p>
+  </div>
+</footer>
+
+
+  <!-- AOS Animations -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, easing: 'ease-in-out', once: true });
+  </script>
+</body>
+</html>
