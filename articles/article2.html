@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>n8n + AI Workflow Automation | Premium Blog</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+<style>
+  body { font-family: 'Poppins', sans-serif; background-color:#f7f3ef; }
+  h1, h2 { font-family: 'Playfair Display', serif; }
+  .chart-card { background:white; border-radius:1.5rem; padding:2rem; box-shadow:0 10px 25px rgba(0,0,0,0.08);}
+</style>
+</head>
+<body class="text-gray-900">
+
+<!-- Header -->
+<header class="bg-white/90 backdrop-blur-md shadow-md sticky top-0 z-50">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+    <a href="index.html" class="text-2xl font-extrabold text-[#004D40]">Deepak Portfolio</a>
+    <nav class="space-x-6">
+      <a href="index.html#about" class="text-gray-700 hover:text-[#004D40] transition">About</a>
+      <a href="index.html#projects" class="text-gray-700 hover:text-[#004D40] transition">Projects</a>
+      <a href="index.html#blog" class="text-gray-700 hover:text-[#004D40] transition">Blog</a>
+      <a href="index.html#contact" class="text-gray-700 hover:text-[#004D40] transition">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<div class="max-w-6xl mx-auto my-12 p-12 space-y-20">
+
+<!-- Hero Section -->
+<section class="text-center space-y-6">
+  <h1 class="text-5xl md:text-6xl font-bold leading-snug" style="background: linear-gradient(90deg, #004D40, #344E41); -webkit-background-clip: text; color: transparent;">
+    n8n + AI Workflow Automation
+  </h1>
+  <p class="text-xl md:text-2xl text-gray-700 max-w-3xl mx-auto">
+    Transform raw data into actionable insights with intelligent workflows and AI reasoning, optimizing operations across industries.
+  </p>
+</section>
+
+<!-- Problem & Solution Section -->
+<section class="grid md:grid-cols-2 gap-12 items-start">
+  <div>
+    <h2 class="text-3xl font-bold text-[#004D40] mb-6">Why Traditional Automation Falls Short</h2>
+    <p class="text-lg mb-6 leading-relaxed">Moving data between systems is not enough. Interpretation, prioritization, and decision-making still require human input.</p>
+    <p class="text-lg leading-relaxed">Combining n8n with AI agents enables intelligent, context-aware workflows that automate reasoning and reduce errors, ensuring decisions are faster and more accurate.</p>
+  </div>
+  <div>
+    <img src="images/image18.png" alt="AI and workflow" class="w-full rounded-xl shadow-lg">
+  </div>
+</section>
+
+<!-- Key Metrics & Charts Section -->
+<section class="space-y-12">
+  <h2 class="text-3xl font-bold text-[#344E41] mb-6 text-center">Data-Driven Insights & Workflow Impact</h2>
+
+  <div class="grid md:grid-cols-2 gap-12">
+
+    <!-- Enhanced Sankey Flow Chart -->
+    <div class="chart-card">
+      <h3 class="text-xl font-semibold mb-4">Task Flow: AI + Workflow Nodes</h3>
+      <div id="sankeyChart" style="width:100%; height:400px;"></div>
+    </div>
+
+    <!-- Radial Node Chart -->
+    <div class="chart-card">
+      <h3 class="text-xl font-semibold mb-4">AI Agents & Workflow Dependencies</h3>
+      <canvas id="radialNode" width="400" height="350"></canvas>
+    </div>
+
+    <!-- Enhanced Heatmap -->
+    <div class="chart-card">
+      <h3 class="text-xl font-semibold mb-4">Workflow Load & Bottlenecks</h3>
+      <canvas id="heatmap" width="400" height="350"></canvas>
+    </div>
+
+    <!-- Funnel Chart -->
+    <div class="chart-card">
+      <h3 class="text-xl font-semibold mb-4">Task Completion Efficiency</h3>
+      <canvas id="funnelChart" width="400" height="350"></canvas>
+    </div>
+
+    <!-- Forecast / Cone Chart -->
+    <div class="chart-card md:col-span-2">
+      <h3 class="text-xl font-semibold mb-4">Predicted Workflow Throughput</h3>
+      <canvas id="forecastCone" width="800" height="350"></canvas>
+    </div>
+  </div>
+</section>
+
+<!-- Extra Insights Section -->
+<section class="space-y-12">
+  <h2 class="text-3xl font-bold text-[#004D40] mb-6">Extra Insights for Decision-Makers</h2>
+  <ul class="list-disc list-inside text-lg space-y-3">
+    <li><strong>Data Validation & Error Handling:</strong> AI detects anomalies in inputs, reducing human intervention and increasing accuracy.</li>
+    <li><strong>Node Dependency Analysis:</strong> Understanding interactions between nodes ensures optimized workflow paths and reduces bottlenecks.</li>
+    <li><strong>Real-Time Monitoring & Alerts:</strong> Dashboards provide predictive insights, enabling proactive interventions before issues escalate.</li>
+  </ul>
+</section>
+
+<!-- Key Takeaways -->
+<section class="rounded-3xl p-14 text-center space-y-6 text-white" style="background: linear-gradient(120deg, #004D40, #344E41);">
+  <h2 class="text-3xl md:text-4xl font-bold text-[#F7EFE5]">Key Takeaways</h2>
+  <p class="text-lg md:text-xl leading-relaxed max-w-4xl mx-auto font-light tracking-wide text-gray-100">
+    Integrating <strong>low-code automation (n8n)</strong> with <strong>AI reasoning</strong> delivers intelligent workflows that save time, reduce errors, and provide measurable business impact.
+  </p>
+  <a href="index.html#contact" class="inline-block mt-6 px-10 py-4 bg-white text-[#004D40] font-semibold rounded-2xl text-lg hover:bg-gray-100 transition">
+    Get in Touch
+  </a>
+</section>
+
+</div>
+
+<!-- Footer -->
+<footer class="bg-white mt-16 shadow-inner py-12 text-gray-700">
+  <div class="max-w-6xl mx-auto px-10 text-center space-y-4">
+    <p>&copy; 2025 Deepak Portfolio. All rights reserved.</p>
+  </div>
+</footer>
+
+
+<!-- Chart Libraries -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/d3-sankey@0.12.3/dist/d3-sankey.min.js"></script>
+
+<!-- Enhanced Sankey Chart -->
+<script>
+const sankeyData = {
+  nodes: [
+    {name:"Raw Data"}, {name:"Data Validation"}, {name:"AI Processing"}, 
+    {name:"Node 1"}, {name:"Node 2"}, {name:"Decision Logic"}, {name:"Output"}
+  ],
+  links: [
+    {source:0,target:1,value:100},{source:1,target:2,value:90},
+    {source:2,target:3,value:50},{source:2,target:4,value:40},
+    {source:3,target:5,value:50},{source:4,target:5,value:40},
+    {source:5,target:6,value:90}
+  ]
+};
+const width = 700, height = 400;
+const svg = d3.select("#sankeyChart").append("svg").attr("width", width).attr("height", height);
+const {sankey,sankeyLinkHorizontal} = d3;
+const generator = sankey().nodeWidth(24).nodePadding(20).extent([[1,1],[width-1,height-5]]);
+const graph = generator({nodes: sankeyData.nodes.map(d=>Object.assign({},d)), links: sankeyData.links.map(d=>Object.assign({},d))});
+
+// Nodes
+svg.append("g").selectAll("rect").data(graph.nodes).join("rect")
+   .attr("x", d => d.x0).attr("y", d => d.y0)
+   .attr("height", d => d.y1 - d.y0).attr("width", d => d.x1 - d.x0)
+   .attr("fill", "#344E41").attr("stroke", "#a3b18a");
+
+// Node Labels
+svg.append("g").selectAll("text").data(graph.nodes).join("text")
+   .attr("x", d => d.x0 - 10).attr("y", d => (d.y1+d.y0)/2)
+   .attr("text-anchor", "end").attr("alignment-baseline", "middle")
+   .text(d=>d.name).style("fill","#344E41").style("font-size","12px");
+
+// Links
+svg.append("g").attr("fill","none").selectAll("path").data(graph.links).join("path")
+   .attr("d", sankeyLinkHorizontal())
+   .attr("stroke","#a3b18a").attr("stroke-width",d=>Math.max(2,d.width)).attr("opacity",0.7);
+</script>
+
+<!-- Radial Node Graph -->
+<script>
+const ctxRadial = document.getElementById('radialNode').getContext('2d');
+new Chart(ctxRadial,{
+  type:'bubble',
+  data:{
+    datasets:[{
+      label:'Workflow Nodes',
+      data:[
+        {x:20,y:30,r:15,name:"Raw Data"},
+        {x:40,y:60,r:18,name:"AI Processing"},
+        {x:60,y:40,r:12,name:"Node 1"},
+        {x:80,y:50,r:12,name:"Node 2"},
+        {x:100,y:70,r:20,name:"Output"}
+      ],
+      backgroundColor:'#344E41'
+    }]
+  },
+  options:{
+    plugins:{tooltip:{callbacks:{label:c=>c.raw.name}},title:{display:true,text:'AI Agent Dependencies'}},
+    scales:{x:{display:false},y:{display:false}}
+  }
+});
+</script>
+
+<!-- Enhanced Heatmap -->
+<script>
+const ctxHeat = document.getElementById('heatmap').getContext('2d');
+new Chart(ctxHeat,{
+  type:'matrix',
+  data:{datasets:[{
+    label:'Workflow Load Heatmap',
+    data:[
+      {x:0,y:0,v:20},{x:1,y:0,v:50},{x:2,y:0,v:80},{x:3,y:0,v:60},
+      {x:0,y:1,v:40},{x:1,y:1,v:70},{x:2,y:1,v:55},{x:3,y:1,v:75},
+      {x:0,y:2,v:60},{x:1,y:2,v:90},{x:2,y:2,v:70},{x:3,y:2,v:85},
+      {x:0,y:3,v:50},{x:1,y:3,v:65},{x:2,y:3,v:80},{x:3,y:3,v:95}
+    ],
+    backgroundColor:(ctx)=>{
+      const value=ctx.dataset.data[ctx.dataIndex].v;
+      const r=Math.round(52 + (163-52)*(value/100));
+      const g=Math.round(78 + (177-78)*(value/100));
+      const b=Math.round(65 + (138-65)*(value/100));
+      return `rgba(${r},${g},${b},0.8)`;
+    },
+    width:50,height:50
+  }]},
+  options:{
+    plugins:{
+      legend:{display:false},
+      tooltip:{callbacks:{label:ctx=>`Load: ${ctx.raw.v}%`}},
+      title:{display:true,text:'Detailed Workflow Load Heatmap',font:{size:16,weight:'bold'}}
+    },
+    scales:{x:{display:false},y:{display:false}}
+  }
+});
+</script>
+
+<!-- Funnel Chart -->
+<script>
+const ctxFunnel = document.getElementById('funnelChart').getContext('2d');
+new Chart(ctxFunnel,{
+  type:'bar',
+  data:{labels:['Incoming','AI Processing','Decision','Output'],datasets:[{label:'Tasks Completed (%)',data:[100,80,70,65],backgroundColor:['#a3b18a','#a3b18a','#344E41','#344E41'],borderRadius:6}]},
+  options:{indexAxis:'y',plugins:{legend:{display:false},title:{display:true,text:'Workflow Task Completion'}},scales:{x:{min:0,max:100}}}
+});
+</script>
+
+<!-- Forecast Cone -->
+<script>
+const ctxForecast = document.getElementById('forecastCone').getContext('2d');
+new Chart(ctxForecast,{
+  type:'line',
+  data:{
+    labels:['Week 1','Week 2','Week 3','Week 4','Week 5'],
+    datasets:[
+      {label:'Predicted Throughput',data:[50,60,70,80,85],borderColor:'#344E41',backgroundColor:'rgba(52,78,65,0.2)',fill:true},
+      {label:'Upper Bound',data:[60,70,80,90,95],borderColor:'transparent',backgroundColor:'rgba(52,78,65,0.1)',fill:'+1'},
+      {label:'Lower Bound',data:[40,50,60,70,75],borderColor:'transparent',backgroundColor:'rgba(52,78,65,0.1)',fill:'-1'}
+    ]
+  },
+  options:{plugins:{title:{display:true,text:'Predicted Workflow Throughput with Uncertainty'}}}
+});
+</script>
+
+</body>
+</html>
+
+
